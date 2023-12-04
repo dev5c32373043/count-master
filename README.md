@@ -2,6 +2,8 @@
 
 This service manages user authentication, featuring two distinct roles: PRO users and Regular users. Each user possesses a dedicated counter allowing increments or decrements within a 1-minute timeframe. Using BullMQ, the service schedules delayed jobs to manage time-sensitive counter actions. Within these jobs, positive counter changes are stored as historical records in the database, while negative values prompt an automatic removal process. This seamless process maintains database efficiency by recording pertinent data and handling redundant information promptly. Upon job completion, users receive WebSocket notifications, offering real-time updates on their respective counter statuses.
 
+[preview](https://github.com/dev5c32373043/count-master/assets/13788002/bd14dfd4-23be-4284-a096-6322ce873b69)
+
 ## Getting started
 
 To start the project install all dependencies in requirements section.
